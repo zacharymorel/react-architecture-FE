@@ -1,0 +1,96 @@
+1. What is the tech? 
+    - React
+
+2. Stories are we building? 
+
+3. Split up by features?
+
+4. Global Needs? 
+    - Styling features
+    - Client Side routing 
+    - Global State"
+
+5. DIRECTORY options
+
+
+
+Options  A: 
+    .babelrc
+    .env
+    .env.example
+    .nvmrc
+    .jenkins/cloudbuild.yaml
+    .README
+    .prettierrc
+    .gitignore
+    public/
+        images/
+        index.html
+    src/
+        index.js
+        home/
+            modules/
+                common/
+                featurebased(liek Auth, etc)
+            routes/
+            providers/
+                contextProviders
+            context/
+                contextDefinitions
+            store/
+                redux-nonsense
+                middleware
+            actions/ 
+            reducers/
+            customHooks/
+        graphql/
+        assets/
+        config/ 
+        fonts/
+        styles/
+         
+
+
+Option B: 
+    .babelrc
+    .env
+    .env.example
+    .nvmrc
+    .jenkins/cloudbuild.yaml
+    .README
+    .prettierrc
+    .gitignore
+    public/
+        images/
+        index.html
+    src/
+        index.js
+        home/
+            modules/
+                common/
+                    Button/
+                    DropDown/
+                    TextField/
+                    Form/
+                featurebased(liek Auth, etc)
+                SearchBar/ 
+                        SearchBar.js
+                        children/ 
+                            *.js
+                        reducers.js || searchBarContext.js
+                        actions.js || searchBarContextProvider.js
+                        searchBarHooks.js
+                        searchBarHttpsUtils.js
+                        searchBarStyles.scss || CSS in JS 
+            routes/
+            containers/
+                globalContainers || HOCs
+            store/
+                redux-nonsense
+                middleware
+                barrelImports...
+        graphql/
+        assets/
+        config/ 
+        fonts/
+        
